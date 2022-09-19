@@ -13,10 +13,13 @@ import joblib
 import warnings
 warnings.filterwarnings("ignore") 
 
+st.set_page_config(page_title='Mercedes Benz Test Time')
+
 st.title('Mercedes Benz Greener Manufacturing : Predicting the Test Time of a Mercedes Benz', anchor=None)
 
 image = Image.open('Mercedes_Logo_11.jpg')
 st.image(image, caption='Mercedes Benz')
+
 
 st.header('Objective')
 st.write('Our objective is to predict the testing time of a Mercedes Benz spent on a test bench. Mercedes-Benz applies for nearly 2000 patents per year, making the brand the European leader among premium car makers. Cars when manufactured cannot be put straight away to run on the road without testing. Every vehicle has to go some testing parameters before they hit the road for our use. Testing is a very crucial step in any automotive industry and all the car manufacturers do the testing of their cars before entering to the market so as to maintain the safety of the passengers in the vehicle. So, a premium and popular brand in automotive industry like Mercedes Benz does not compromise on the quality and testing of their vehicles and hence with this problem they want to minimize the testing time that each vehicle spent on the testing so as to reduce the testing cost and CO2 emissions also. The goal of this study is to have a robust and efficient testing system such that the testing time is reduced without compromising the quality')
