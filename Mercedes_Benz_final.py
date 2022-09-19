@@ -40,7 +40,7 @@ if st.checkbox('Show Raw Data'):
     st.subheader('Raw data')
     st.write(data_train)
     
-st.write('Now as we have seen the crux of the raw data we know that each vehicle has a set of Categorical features and Binary features in data and by these features we have to determine the impact of the features on our ground truth value(ie. Our testing time(y) in raw data')
+st.write('Now as we have seen the crux of the raw data we know that each vehicle has a set of Categorical features and Binary features in data and by these features we have to determine the impact of the features on our ground truth value(ie. Our testing time(y) in raw data)')
     
 st.header('Analysing Ground Truth Values')
 
@@ -170,7 +170,7 @@ def analyze_cat():
     
     st.subheader('Observation')
     
-    st.write('A. When we observe the box plots of X0 we can clearly see that az and bc are two customizations that are not overlapping with the other customizations and hence they can be grouped as seperate entities.\n 1. Customizations like (s,n,f and y) and (b , u, ad) are all having the same distribution of time. So we can infer from this that maybe the customizations are different in their behaviours but may take same test time.\n  2. Some customizations like k have very large distribution of test time and it concludes that these type of customizations are crucial and they may take large time or may end up early according to the vehicle model.\n B. In X1 and X5 all the customizations have almost same distribution except (v) in X1 and (x) in X5. X6 and X8 have same distributed customizations. X4 has very less variance and it can be removed as it is not providing that much of the information.')
+    st.write('A. When we observe the box plots of X0 we can clearly see that (az) and (bc) are two customizations that are not overlapping with the other customizations and hence they can be grouped as seperate entities.\n 1. Customizations like (s,n,f and y) and (b , u, ad) are all having the same distribution of time. So we can infer from this that maybe the customizations are different in their behaviours but may take same test time.\n  2. Some customizations like (k) have very large distribution of test time and it concludes that these type of customizations are crucial and they may take large time or may end up early according to the vehicle model.\n B. In X1 and X5 all the customizations have almost same distribution except (v) in X1 and (x) in X5. X6 and X8 have same distributed customizations. X4 has very less variance and it can be removed as it is not providing that much of the information.')
 
 if __name__ == "__main__":
     main()
