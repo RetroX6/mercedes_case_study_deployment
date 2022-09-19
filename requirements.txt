@@ -1,0 +1,10 @@
+streamlit
+PIL
+numpy
+matplotlib.pyplot
+pandas
+seaborn
+sklearn.preprocessing
+OrdinalEncoder
+xgboost
+joblib
