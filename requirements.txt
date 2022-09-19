@@ -3,5 +3,4 @@ matplotlib
 pandas
 seaborn
 xgboost
-OrdinalEncoder
-r2_score
+sklearn
