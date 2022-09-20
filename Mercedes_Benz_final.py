@@ -48,12 +48,7 @@ st.write('Now as we have seen the crux of the raw data we know that each vehicle
 st.header('Analysing Ground Truth Values')
 
 def main():
-    page = st.sidebar.selectbox(
-        "Select a Page",
-        [
-            "Violin , Distribution and Scatter Plot of Test Time" #New Page
-        ]
-    )
+    
     violinDist_plot()
     
 def violinDist_plot():
@@ -95,12 +90,6 @@ st.header('Analysing Categorical features')
 
 def main():
     
-    page = st.sidebar.selectbox(
-        "Select a Page",
-        [
-            "Analysis of Categorical Features" #New Page
-        ]
-    )
     analyze_cat()
     
 def analyze_cat():
@@ -182,12 +171,6 @@ st.header('Analysing Binary features')
 
 def main():
     
-    page = st.sidebar.selectbox(
-        "Select a Page",
-        [
-            "Analysis of Binary Features" #New Page
-        ]
-    )
     analyze_bin()
     
 def analyze_bin():
